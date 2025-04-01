@@ -4,40 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orquídeas da Ariane</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCv9hZPluTNNE_NZH24CUWHwRwZHN04Sr5A&s"  alt="Logo Orquídeas Azuis" class="logo">
-        <div class="header-text">
-            <h1>Orquídeas da Ariane</h1>
-            <p>Orquidário da Praia da Florida</p>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Header -->
+    <header class="bg-primary text-white d-flex align-items-center p-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCv9hZPluTNNE_NZH24CUWHwRwZHN04Sr5A&s" alt="Logo Orquídeas Azuis" class="logo">
+        <div class="ms-3">
+            <h1 class="h3">Orquídeas da Ariane</h1>
+            <p class="m-0">Orquidário da Praia da Florida</p>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#cultivo">Cultivo</a></li>
-            <li><a href="#curiosidades">Curiosidades</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cultivo">Cultivo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <article class="post">
-            <h2>Cultivo em Ambientes Internos</h2>
-            <div class="post-date">Publicado em: 20/01/2025</div>
-            <div class="post-content">
-                <img src="https://via.placeholder.com/800x400" alt="Orquídea em ambiente interno">
-                <p>Descubra como manter suas orquídeas saudáveis e floridas dentro de casa com essas dicas de iluminação e umidade controlada...</p>
-                <a href="#" class="read-more">Leia mais</a>
+    <main class="container flex-grow-1 py-4">
+        <article class="card shadow-sm">
+            <img src="https://via.placeholder.com/800x400" class="card-img-top" alt="Orquídea em ambiente interno">
+            <div class="card-body">
+                <h2 class="card-title">Cultivo em Ambientes Internos</h2>
+                <p class="card-text">Descubra como manter suas orquídeas saudáveis e floridas dentro de casa com essas dicas de iluminação e umidade controlada...</p>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+            </div>
+            <div class="card-footer text-muted">
+                Publicado em: 20/01/2025
             </div>
         </article>
     </main>
 
-    <footer>
-        <p>© 2025 Orquídeas da Ariane - Contato: contato@orquideasdaariane.com</p>
+    <footer class="bg-primary text-white text-center py-3 mt-auto">
+        <p class="mb-0">© 2025 Orquídeas da Ariane - Contato: contato@orquideasdaariane.com</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
