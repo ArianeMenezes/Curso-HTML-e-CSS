@@ -1,11 +1,23 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f8ff;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4682B4;
+    padding: 1rem;
+    text-align: center;
+    color: white;
 }
 
 header img {
@@ -13,6 +25,11 @@ header img {
     width: auto;
     border-radius: 50%;
     border: 3px solid white;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 2rem;
 }
 
 .navbar {
@@ -30,22 +47,66 @@ header img {
     border-radius: 10px;
 }
 
-main {
-    flex: 1;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-out forwards;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #4682B4;
+    animation: slideUp 1s ease-out forwards;
+}
+
+ul li {
+    margin-bottom: 1rem;
 }
 
 .card {
     border-left: 5px solid #87CEEB;
+    animation: fadeIn 1s ease-out forwards;
 }
 
 .card img {
     border-radius: 8px;
 }
 
+.card-body {
+    animation: slideUp 1s ease-out forwards;
+}
+
 .btn-primary {
     background-color: #4682B4;
     border-color: #4682B4;
     transition: 0.3s;
+    font-size: 1.2rem; 
+    padding: 12px 24px; 
+    width: auto; 
+    display: block; 
+    margin-top: 1rem; 
+    text-align: center; 
 }
 
 .btn-primary:hover {
@@ -53,11 +114,30 @@ main {
     border-color: #5F9EA0;
 }
 
-/* Footer fixo no final */
+input, textarea {
+    transition: 0.3s ease;
+    animation: fadeIn 1s ease-out forwards;
+    width: 100%;
+    margin-bottom: 1rem; 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+input:focus, textarea:focus {
+    border-color: #4682B4;
+    box-shadow: 0 0 0 0.2rem rgba(70, 130, 180, 0.25);
+}
+
+.col-12 {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background-color: #4682B4;
     color: white;
-    text-align: center;
-    padding: 16px;
-    margin-top: auto;
-}
