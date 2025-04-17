@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orquídeas da Ariane</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-    <!-- Header -->
-    <header class="bg-primary text-white d-flex align-items-center p-4">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCv9hZPluTNNE_NZH24CUWHwRwZHN04Sr5A&s" alt="Logo Orquídeas Azuis" class="logo">
-        <div class="ms-3">
+    <header class="bg-primary text-white d-flex align-items-center p-4 animate-header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCv9hZPluTNNE_NZH24CUWHwRwZHN04Sr5A&s" alt="Logo Orquídeas Azuis" class="logo me-3">
+        <div>
             <h1 class="h3">Orquídeas da Ariane</h1>
             <p class="m-0">Orquidário da Praia da Florida</p>
         </div>
@@ -36,17 +34,61 @@
     </nav>
 
     <main class="container flex-grow-1 py-4">
-        <article class="card shadow-sm">
-            <img src="img/orquideaslindas.jpg" class="img-fluid rounded" alt="Orquídeas lindas">
-            <div class="card-body">
-                <h2 class="card-title">Cultivo em Ambientes Internos</h2>
-                <p class="card-text">Descubra como manter suas orquídeas saudáveis e floridas dentro de casa com essas dicas de iluminação e umidade controlada...</p>
-                <a href="#" class="btn btn-primary">Leia mais</a>
-            </div>
-            <div class="card-footer text-muted">
-                Publicado em: 20/01/2025
-            </div>
-        </article>
+
+        <section id="home" class="mb-5 fade-in">
+            <h2 class="text-primary">Bem-vindo ao Mundo das Orquídeas! 🌸</h2>
+            <p>Descubra a beleza e o encanto das orquídeas! Aqui você encontrará dicas, curiosidades e informações essenciais para cultivar essas flores incríveis.</p>
+            <img src="https://via.placeholder.com/800x400/ff6347/ffffff?text=Orquídeas+Lindas" class="img-fluid rounded" alt="Orquídeas lindas">
+        </section>
+
+        <section id="cultivo" class="mb-5 fade-in">
+            <h2 class="text-primary">Dicas de Cultivo 🌿</h2>
+            <p>Para garantir que suas orquídeas cresçam saudáveis e floresçam lindamente, siga estas dicas essenciais:</p>
+            <ul>
+                <li><strong>Iluminação:</strong> Prefira luz indireta e brilhante. Evite sol direto nas folhas.</li>
+                <li><strong>Rega:</strong> Regue apenas quando o substrato estiver seco. Excesso de água pode apodrecer as raízes.</li>
+                <li><strong>Umidade:</strong> Orquídeas gostam de umidade, mas sem encharcamento. Use pratinhos com pedras e água.</li>
+                <li><strong>Adubação:</strong> Use fertilizantes específicos para orquídeas a cada 15 dias.</li>
+                <li><strong>Vasos e substratos:</strong> Prefira substratos arejados como casca de pinus e carvão.</li>
+            </ul>
+            <img src="https://via.placeholder.com/800x400/32cd32/ffffff?text=Orquídeas+em+Vasos" class="img-fluid rounded" alt="Orquídeas em vasos">
+        </section>
+
+        <section id="curiosidades" class="mb-5 fade-in">
+            <h2 class="text-primary">Curiosidades sobre Orquídeas 🌺</h2>
+            <ul>
+                <li>A orquídea é uma das maiores famílias de plantas do mundo, com mais de <strong>25.000 espécies</strong> conhecidas.</li>
+                <li>A baunilha vem de uma espécie de orquídea chamada <em>Vanilla planifolia</em>.</li>
+                <li>Algumas orquídeas podem viver mais de <strong>100 anos</strong> em boas condições!</li>
+                <li>A menor orquídea do mundo tem apenas <strong>2mm de diâmetro</strong>.</li>
+                <li>No Brasil, a orquídea <strong>Cattleya labiata</strong> é uma das mais famosas e queridas.</li>
+            </ul>
+           <img src="https://www.orchidcaretips.com/wp-content/uploads/2019/06/orchid-in-bloom.jpg" class="img-fluid rounded" alt="Orquídea 3">
+
+        </section>
+
+        <section id="contato" class="mb-5 fade-in">
+            <h2 class="text-primary">Entre em Contato 📩</h2>
+            <p>Quer trocar dicas, tirar dúvidas ou compartilhar sua coleção de orquídeas? Entre em contato comigo!</p>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="seuemail@email.com">
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-pulse">Enviar</button>
+                </div>
+            </form>
+        </section>
+
     </main>
 
     <footer class="bg-primary text-white text-center py-3 mt-auto">
